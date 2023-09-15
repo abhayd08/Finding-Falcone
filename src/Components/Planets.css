@@ -2,6 +2,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  animation: 4s fadeIn ease-in-out;
 }
 
 .planets {
@@ -9,7 +10,6 @@
   align-items: center;
   cursor: pointer;
   transition: transform 0.25s ease-in-out;
-  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .planet-img {

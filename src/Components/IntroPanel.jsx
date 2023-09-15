@@ -32,7 +32,7 @@ function IntroPanel() {
         <p className="quote-text">{animatedText}</p>
       </div>
       <img
-        src="/assets/king-shan.jpg"
+        src="/assets/king-shan.webp"
         alt="King Shan"
         id="king-img"
         loading="lazy"

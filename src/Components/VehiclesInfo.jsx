@@ -10,7 +10,7 @@ function VehiclesInfo() {
       <div className="vehicles-info">
         <Stack className="media-vehiclesinfo">
           <img
-            src="/assets/Vehicles/Space pod.png"
+            src="/assets/Vehicles/Space pod.webp"
             alt="Space Pod"
             className="img-vehiclesinfo"
           />
@@ -29,7 +29,7 @@ function VehiclesInfo() {
       <div className="vehicles-info">
         <Stack className="media-vehiclesinfo">
           <img
-            src="/assets/Vehicles/Space rocket.png"
+            src="/assets/Vehicles/Space rocket.webp"
             alt="Space Rocket"
             className="img-vehiclesinfo"
           />
@@ -48,7 +48,7 @@ function VehiclesInfo() {
       <div className="vehicles-info">
         <Stack className="media-vehiclesinfo">
           <img
-            src="/assets/Vehicles/Space shuttle.png"
+            src="/assets/Vehicles/Space shuttle.webp"
             alt="Space Shuttle"
             className="img-vehiclesinfo"
           />
@@ -68,7 +68,7 @@ function VehiclesInfo() {
       <div className="vehicles-info">
         <Stack className="media-vehiclesinfo">
           <img
-            src="/assets/Vehicles/Space ship.png"
+            src="/assets/Vehicles/Space ship.webp"
             alt="Space Ship"
             className="img-vehiclesinfo"
           />

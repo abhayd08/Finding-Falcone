@@ -11,7 +11,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Donlon.png"
+            src="/assets/Planets/Donlon.webp"
             alt="Donlon"
             className="img-planetsinfo"
           />
@@ -36,7 +36,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Enchai.png"
+            src="/assets/Planets/Enchai.webp"
             alt="Enchai"
             className="img-planetsinfo"
           />
@@ -61,7 +61,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Jebing.png"
+            src="/assets/Planets/Jebing.webp"
             alt="Jebing"
             className="img-planetsinfo"
           />
@@ -86,7 +86,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Sapir.png"
+            src="/assets/Planets/Sapir.webp"
             alt="Sapir"
             className="img-planetsinfo"
           />
@@ -111,7 +111,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Lerbin.png"
+            src="/assets/Planets/Lerbin.webp"
             alt="Lerbin"
             className="img-planetsinfo"
           />
@@ -136,7 +136,7 @@ function PlanetsInfo() {
       <div className="planets-info">
         <Stack className="media-planetsinfo">
           <Avatar
-            src="/assets/Planets/Pingasor.png"
+            src="/assets/Planets/Pingasor.webp"
             alt="Pingasor"
             className="img-planetsinfo"
           />

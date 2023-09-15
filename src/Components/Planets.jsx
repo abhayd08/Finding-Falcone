@@ -68,7 +68,7 @@ function Planets({
               }}
             >
               <Avatar
-                src={`/assets/Planets/${planetData.name}.png`}
+                src={`/assets/Planets/${planetData.name}.webp`}
                 alt={planetData.name}
                 className="planet-img"
               />

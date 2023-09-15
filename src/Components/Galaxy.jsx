@@ -253,7 +253,7 @@ function Galaxy() {
   return (
     <div
       id="galaxy-container"
-      style={{ backgroundImage: "url(/assets/galaxy.jpg)" }}
+      style={{ backgroundImage: "url(/assets/galaxy.webp)" }}
     >
       <Header component="Galaxy" />
       <Stack

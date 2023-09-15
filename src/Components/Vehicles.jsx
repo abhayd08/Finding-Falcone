@@ -34,7 +34,7 @@ function Vehicles({
                   >
                     <div className="vehicle-img-container">
                       <img
-                        src={`/assets/Vehicles/${vehicleData.name}.png`}
+                        src={`/assets/Vehicles/${vehicleData.name}.webp`}
                         alt={vehicleData.name}
                         style={{ width: "100%", height: "auto" }}
                       />
