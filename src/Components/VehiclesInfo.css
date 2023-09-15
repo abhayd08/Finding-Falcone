@@ -1,0 +1,83 @@
+#vehicles-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#brand-vehiclesinfo {
+  align-self: center;
+  color: #2e2c4b;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.35rem;
+  margin-bottom: -1.25rem;
+}
+
+.vehicles-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #061826;
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.media-vehiclesinfo {
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+  transition: 0.25s ease-in-out;
+}
+
+.img-vehiclesinfo {
+  width: 4rem !important;
+  height: auto !important;
+  animation: spinRight 6s linear infinite;
+}
+
+.vehicle-name-vehiclesinfo {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  letter-spacing: 2px !important;
+  text-align: center;
+  margin-top: 0.5rem !important;
+}
+
+.description-vehiclesinfo {
+  flex-basis: 70%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  text-align: justify;
+}
+
+.media-vehiclesinfo:hover {
+  .img-vehiclesinfo {
+    animation: spinRight 2s linear infinite;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  #vehicles-info-container {
+    margin-top: 6rem;
+  }
+
+  #brand-vehiclesinfo {
+    font-size: 2.75rem;
+  }
+
+  .img-vehiclesinfo {
+    width: 4.5rem !important;
+  }
+
+  .description-vehiclesinfo {
+    font-size: 1.15rem !important;
+  }
+}

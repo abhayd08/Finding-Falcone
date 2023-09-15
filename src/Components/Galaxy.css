@@ -1,0 +1,85 @@
+#galaxy-container {
+  background-position: center;
+  background-size: cover;
+}
+
+.loading {
+  font-size: 1.75rem;
+  opacity: 0.9;
+  text-align: center;
+  margin-right: 1.1rem;
+}
+
+.error {
+  max-width: 80%;
+  background: linear-gradient(to right, #161032, black);
+  color: #81adff;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0.8;
+  padding: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  border-radius: 1.1rem;
+  animation: blur 1s ease-in;
+}
+
+#time-display-section {
+  position: fixed;
+  bottom: 50vh;
+  left: 0;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: rgb(2, 116, 97);
+  z-index: 1;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.start-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem !important;
+  letter-spacing: 2px !important;
+  width: auto;
+  height: 5rem;
+}
+
+#start-btn-galaxy {
+  background-color: #009fb7;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: none;
+  margin: auto;
+  padding: 0.75rem !important;
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
+  border-radius: 1.15rem !important;
+  z-index: 1;
+  transition: 0.25s ease-in-out;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#start-btn-galaxy:hover {
+  background-color: #e06d06;
+  transform: scale(1.15);
+}
+
+#start-btn-galaxy:active {
+  transform: translateY(1rem);
+}
+
+
+
+@media (max-width: 576px) {
+  #start-btn-galaxy {
+    font-size: 1.5rem !important;
+  }
+}

@@ -1,0 +1,80 @@
+#result-container {
+  background: linear-gradient(
+    to bottom,
+    rgb(181, 243, 222),
+    white,
+    rgb(130, 238, 202)
+  );
+}
+
+.greetings-container {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  color: #161032;
+}
+
+.greeting {
+  font-weight: 500;
+  text-align: center;
+  animation: blur 2s ease-in-out forwards;
+}
+
+.greeting-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1rem;
+  animation: blur 2s ease-in-out forwards;
+}
+
+.greeting-text:nth-child(2) {
+  color: rebeccapurple;
+}
+
+#start-btn-result {
+  background-color: #161032;
+  font-weight: 700 !important;
+  font-size: 1.02rem !important;
+  margin-top: 4rem;
+  padding: 0.75rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  border-radius: 1.15rem !important;
+  letter-spacing: 2px !important;
+  text-transform: none;
+  transition: 0.25s ease-in-out;
+  animation: fadeIn 1.25s ease-in-out forwards;
+}
+
+#start-btn-result:hover {
+  background-color: #e06d06;
+  transform: scale(1.15);
+}
+
+#start-btn-result:active {
+  transform: translateY(1rem);
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .greetings-container {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .greetings-container {
+    min-height: 100vh;
+    font-size: 1.35rem;
+  }
+
+  #start-btn-result {
+    font-size: 1.5rem !important;
+  }
+}

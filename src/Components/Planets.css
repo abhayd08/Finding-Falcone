@@ -1,0 +1,97 @@
+#planets-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.planets {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.planet-img {
+  width: 5rem !important;
+  height: 5rem !important;
+  box-shadow: 0 0 10rem 6.5rem black;
+  animation: spin 15s linear infinite;
+}
+
+.planet-name {
+  font-size: 1.4rem !important;
+  letter-spacing: 0.35rem !important;
+  text-align: center !important;
+  z-index: 1 !important;
+}
+
+.planet-distance {
+  font-size: 0.8rem !important;
+  letter-spacing: 0.125rem !important;
+  z-index: 1;
+  text-align: center;
+  color: #ea9010;
+}
+
+.planet-clicked {
+  transform: scale(1.12);
+}
+
+.planet-unclicked {
+  transform: scale(0.96);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+#planets-container:nth-child(1) {
+  flex-basis: 40%;
+}
+
+#planets-container:nth-child(2) {
+  flex-basis: 40%;
+}
+
+#planets-container:nth-child(3) {
+  flex-basis: 40%;
+}
+
+#planets-container:nth-child(4) {
+  flex-basis: 100%;
+}
+
+#planets-container:nth-child(5) {
+  flex-basis: 40%;
+}
+
+#planets-container:nth-child(6) {
+  flex-basis: 40%;
+}
+
+.planets:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.planets:after {
+  transform: translateY(2rem);
+}
+
+
+
+@media (max-width: 576px) {
+  .planet-img {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+
+  .planet-name {
+    font-size: 1.5rem !important;
+  }
+}

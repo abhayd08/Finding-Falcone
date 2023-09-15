@@ -1,0 +1,46 @@
+.footer {
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background: linear-gradient(to bottom, rgb(192, 241, 225), rgb(38, 243, 175));
+}
+
+#footer-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.45rem;
+  opacity: 0.9;
+  padding: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: #2e2c4b;
+}
+
+.footer-text {
+  width: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  opacity: 0.7;
+}
+
+
+
+@media (max-width: 992px) {
+  .footer-text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer-title {
+    font-size: 2.25rem;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+  }
+}

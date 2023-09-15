@@ -1,0 +1,65 @@
+body {
+  position: relative;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.MuiStack-root > :not(style) ~ :not(style) {
+  margin-left: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2c4b;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(3px);
+  }
+  50% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  #root {
+    width: 100%;
+  }
+}
