@@ -12,6 +12,7 @@ body {
 a {
   text-decoration: none;
   color: #2e2c4b;
+  background-color: transparent;
 }
 
 @keyframes fadeIn {

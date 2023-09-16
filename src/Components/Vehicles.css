@@ -14,7 +14,7 @@
   z-index: 1;
   background: linear-gradient(to bottom, white, rgb(181, 243, 222));
   box-shadow: 0 0 8rem 7.5rem black;
-  animation: fadeIn 1.25s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .vehicles {
@@ -123,7 +123,7 @@
 
 @media (max-width: 575px) {
   #vehicles-container {
-    min-width: 70%;
+    min-width: 72.5%;
   }
 
   .vehicle-img-container {

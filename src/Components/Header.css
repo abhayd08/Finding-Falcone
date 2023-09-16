@@ -4,7 +4,6 @@
   align-items: center;
   gap: 5rem;
   padding: 1rem;
-  padding-right: 1.15rem;
 }
 
 .header-title {
@@ -18,13 +17,14 @@
   padding: 0.75rem;
   cursor: pointer;
   color: #2e2c4b;
+  transition: .2s ease-in-out;
 }
 
 #nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   z-index: 1;
 }
 

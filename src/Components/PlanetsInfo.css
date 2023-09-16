@@ -26,7 +26,6 @@
   align-items: center;
   gap: 2rem;
   color: #061826;
-  animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 .media-planetsinfo {
@@ -40,7 +39,6 @@
 .img-planetsinfo {
   width: 5rem !important;
   height: auto !important;
-  animation: spin 15s linear infinite;
 }
 
 .planet-name-planetsinfo {
@@ -76,7 +74,7 @@
   }
 
   .img-planetsinfo {
-    width: 5.5rem !important;
+    width: 6rem !important;
   }
 
   .description-planetsinfo {

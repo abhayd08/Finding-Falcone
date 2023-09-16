@@ -1,5 +1,5 @@
 #intropanel {
-  width: 92%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@
 
 .quote-container {
   width: 60%;
+  max-width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +27,8 @@
   overflow: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.21rem;
   font-weight: 500;
-  letter-spacing: 2px;
   line-height: 2rem;
   text-align: justify;
   color: #404e5c;
@@ -36,7 +36,7 @@
 }
 
 #king-img {
-  width: 15rem;
+  width: 12.5rem;
   height: auto;
   mix-blend-mode: multiply;
   transition: transform 0.3s ease;
@@ -44,11 +44,11 @@
 }
 
 #king-img:hover {
-  transform: translateY(2rem);
+  transform: translateY(1.25rem);
 }
 
 #king-img:active {
-  transform: translateX(2rem);
+  transform: translateX(1.8rem);
 }
 
 @keyframes typewriter {
@@ -65,5 +65,13 @@
 @media (max-width: 992px) {
   #intropanel {
     gap: 0;
+  }
+}
+
+@media (max-width: 756px) {
+  #intropanel {
+    min-height: 27rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

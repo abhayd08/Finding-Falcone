@@ -237,6 +237,8 @@ function Galaxy() {
 
   const handleStartButtonClick = (event) => {
     event.target.setAttribute("disabled", "");
+    event.target.style.backgroundColor="#e06d06"
+    event.target.style.cursor="progress"
     setBtnLoadingContent(
       <>
         <span style={{ marginRight: ".5rem" }}>Loading</span>
@@ -246,6 +248,8 @@ function Galaxy() {
     setTimeout(() => {
       setBtnLoadingContent(null);
       event.target.removeAttribute("disabled");
+      event.target.style.backgroundColor="#009fb7"
+      event.target.style.cursor="auto"
       navigate("/result");
     }, 2000);
   };

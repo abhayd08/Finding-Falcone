@@ -22,11 +22,11 @@
   font-size: 1rem;
   text-transform: none;
   color: #161032 !important;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 #btn-container-introduction Button:hover {
-  background-color: white !important;
+  background-color: transparent !important;
   color: #e06d06 !important;
 }
 
@@ -39,7 +39,7 @@
   padding-right: 1.75rem !important;
   border-radius: 1.15rem !important;
   transition: 0.25s ease-in-out !important;
-  animation: fadeIn 4s ease-in-out forwards;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 .ready-btn-introduction:last-child {

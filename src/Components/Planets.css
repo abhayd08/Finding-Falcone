@@ -2,7 +2,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  animation: 4s fadeIn ease-in-out;
 }
 
 .planets {
@@ -16,7 +15,6 @@
   width: 5rem !important;
   height: 5rem !important;
   box-shadow: 0 0 10rem 6.5rem black;
-  animation: spin 15s linear infinite;
 }
 
 .planet-name {
@@ -77,6 +75,10 @@
 .planets:hover {
   transform: scale(1.05);
   z-index: 1;
+
+  .planet-img {
+    animation: spin 10s linear infinite;
+  }
 }
 
 .planets:after {

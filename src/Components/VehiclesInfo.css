@@ -26,7 +26,6 @@
   align-items: center;
   gap: 2rem;
   color: #061826;
-  animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 .media-vehiclesinfo {
@@ -40,7 +39,6 @@
 .img-vehiclesinfo {
   width: 4rem !important;
   height: auto !important;
-  animation: spinRight 6s linear infinite;
 }
 
 .vehicle-name-vehiclesinfo {
@@ -58,7 +56,7 @@
 
 .media-vehiclesinfo:hover {
   .img-vehiclesinfo {
-    animation: spinRight 2s linear infinite;
+    animation: spinRight 3.5s linear infinite;
   }
 }
 
@@ -74,7 +72,7 @@
   }
 
   .img-vehiclesinfo {
-    width: 4.5rem !important;
+    width: 4.75rem !important;
   }
 
   .description-vehiclesinfo {

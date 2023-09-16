@@ -6,7 +6,7 @@ import "./Header.css";
 const Header = ({ component }) => {
   const navigate = useNavigate();
   const handleNavigation = (path) => {
-    navigate(path);
+      navigate(path);
   };
 
   return (
