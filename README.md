@@ -10,6 +10,10 @@ This project was bootstrapped with [Create React App].
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Use this command to install the project's dependencies and create the `node_modules` folder. This step is essential before running `yarn start` to ensure that the environment is set up correctly.
+
 ### `yarn start`
 
 Runs the app in the development mode.\
