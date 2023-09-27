@@ -117,6 +117,7 @@
   .home-btn {
     padding-right: 0.45rem;
   }
+
   .nav-btn:last-child::before {
     bottom: 0;
     left: 20.5px;

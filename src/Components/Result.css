@@ -41,7 +41,7 @@
   text-align: center;
   line-height: 1.75rem;
   padding-left: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-weight: 600;
   animation: slideInFromLeft 1.2s ease-in-out, blur 2s ease-in-out forwards;
 }

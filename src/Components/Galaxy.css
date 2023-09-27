@@ -6,6 +6,7 @@
 
 .loading {
   font-size: 1.18rem;
+  font-weight: 600;
   opacity: 0.9;
   text-align: center;
   margin-right: 0.9rem;
@@ -19,10 +20,11 @@
   color: #81adff;
   font-size: 1.1rem;
   text-align: center;
+  font-weight: 600;
   opacity: 0.8;
   padding: 1.15rem;
   padding-left: 2rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
   border-radius: 1.1rem;
 }
 

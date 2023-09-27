@@ -51,6 +51,7 @@
 .vehicle-description {
   color: #161032;
   font-family: "Comfortaa", sans-serif !important;
+  font-weight: 600 !important;
   text-align: center;
   font-size: 0.8rem;
   color: rgb(79, 78, 78);
