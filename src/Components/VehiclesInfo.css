@@ -4,19 +4,18 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  padding: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 
 #brand-vehiclesinfo {
   align-self: center;
   color: #2e2c4b;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 0.35rem;
-  margin-bottom: -1.25rem;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
+  font-size: 2.15rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  margin-bottom: -2rem;
 }
 
 .vehicles-info {
@@ -24,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
   color: #061826;
 }
 
@@ -42,40 +41,66 @@
 }
 
 .vehicle-name-vehiclesinfo {
-  font-family: "Bricolage Grotesque", sans-serif !important;
-  letter-spacing: 2px !important;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif !important;
+  font-size: 1.15rem !important;
+  letter-spacing: 1px !important;
+  opacity: 0.85;
   text-align: center;
-  margin-top: 0.5rem !important;
 }
 
 .description-vehiclesinfo {
-  flex-basis: 70%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Comfortaa", sans-serif !important;
+  font-size: 1.05rem !important;
+  flex-basis: 65%;
   text-align: justify;
+  opacity: 0.9;
 }
 
 .media-vehiclesinfo:hover {
+  transform: scale(1.1);
+
   .img-vehiclesinfo {
-    animation: spinRight 3.5s linear infinite;
+    animation: spinRight 4s linear infinite;
   }
 }
 
-
+@media (min-width: 576px) {
+  #vehicles-info-container {
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 
 @media (max-width: 576px) {
   #vehicles-info-container {
-    margin-top: 6rem;
+    gap: 6rem;
+    padding: 0.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   #brand-vehiclesinfo {
-    font-size: 2.75rem;
+    padding-left: 1rem;
+    align-self: self-start;
   }
 
-  .img-vehiclesinfo {
-    width: 4.75rem !important;
+  .vehicles-info {
+    flex-direction: column;
+  }
+
+  .media-vehiclesinfo {
+    width: auto;
   }
 
   .description-vehiclesinfo {
-    font-size: 1.15rem !important;
+    width: 88%;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .img-vehiclesinfo {
+    animation: spinRight 7s linear infinite;
   }
 }

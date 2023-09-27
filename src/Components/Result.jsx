@@ -51,19 +51,18 @@ const Result = () => {
           <>
             <h2 className="greeting">Yay! Planet Found 😃</h2>
             <p className="greeting-text">
-              It is {planetName} where the Queen is found.
-            </p>
-            <p className="greeting-text">
-              It took {timeTaken} hours to complete the search.
+              After an exhaustive <strong>{timeTaken} hours</strong> search in{" "}
+              <strong>{planetName}</strong>, the elusive queen was ultimately
+              located.
             </p>
             <p className="greeting-text">Thanks for your help!</p>
           </>
         ) : (
           <>
-            <h2 className="greeting">
+            <h2 className="error-text">
               Queen not found in any of the selected planets. 🥺
             </h2>
-            <span className="greeting">Try again!</span>
+            <span className="error-text">Try again!</span>
           </>
         )}
         <Button

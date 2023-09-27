@@ -1,38 +1,56 @@
 #result-container {
-  background: linear-gradient(
-    to bottom,
-    rgb(181, 243, 222),
-    white,
-    rgb(130, 238, 202)
-  );
+  background: linear-gradient(to bottom, rgb(181, 243, 222), white, white);
 }
 
 .greetings-container {
-  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1rem;
   color: #161032;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-height: 55vh;
 }
 
 .greeting {
-  font-weight: 500;
   text-align: center;
-  animation: blur 2s ease-in-out forwards;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  animation: slideInFromLeft 1.2s ease-in-out, blur 2s ease-in-out forwards;
 }
 
 .greeting-text {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-bottom: 1rem;
-  animation: blur 2s ease-in-out forwards;
+  text-align: center;
+  line-height: 1.75rem;
+  animation: slideInFromLeft 1.2s ease-in-out, blur 2s ease-in-out forwards;
+}
+
+.error-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.75rem;
+  padding-left: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  animation: slideInFromLeft 1.2s ease-in-out, blur 2s ease-in-out forwards;
 }
 
 .greeting-text:nth-child(2) {
+  color: rebeccapurple;
+}
+
+.error-text:nth-child(2) {
   color: rebeccapurple;
 }
 
@@ -47,34 +65,43 @@
   border-radius: 1.15rem !important;
   letter-spacing: 2px !important;
   text-transform: none;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
   transition: 0.25s ease-in-out;
   animation: fadeIn 1.25s ease-in-out forwards;
 }
 
 #start-btn-result:hover {
   background-color: #e06d06;
-  transform: scale(1.15);
+  transform: scale(1.06);
 }
 
 #start-btn-result:active {
   transform: translateY(1rem);
 }
 
-
-
 @media screen and (min-width: 768px) {
   .greetings-container {
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .greetings-container {
-    min-height: 100vh;
-    font-size: 1.35rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
-  #start-btn-result {
-    font-size: 1.5rem !important;
+  .greeting {
+    font-size: 1.75rem;
+  }
+
+  .greeting-text {
+    font-size: 0.98rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+  }
+
+  .error-text {
+    font-size: 1.25rem;
   }
 }

@@ -22,6 +22,7 @@ function Galaxy() {
   const [btnLoadingContent, setBtnLoadingContent] = useState(null);
   const [pageLoading, setPageLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [toShowPlanets, setToShowPlanets] = useState(true);
 
   useEffect(() => {
     document.title = "Find Queen Falcone!";
@@ -188,6 +189,7 @@ function Galaxy() {
         calculateTimeToBeTaken(planetName, vehicleName);
         setSelectedPlanets([...selectedPlanets, planetName]);
         setSelectedVehicles([...selectedVehicles, vehicleName]);
+        setToShowPlanets(true);
         enqueueSnackbar(`${planetCurrentlySelected} selected`, {
           variant: "success",
         });
@@ -232,13 +234,15 @@ function Galaxy() {
         "You have already selected four planets. Try unselecting the previous ones.",
         { variant: "warning" }
       );
+    } else {
+      setToShowPlanets(!toShowPlanets);
     }
   };
 
   const handleStartButtonClick = (event) => {
     event.target.setAttribute("disabled", "");
-    event.target.style.backgroundColor="#e06d06"
-    event.target.style.cursor="progress"
+    event.target.style.backgroundColor = "#e06d06";
+    event.target.style.cursor = "progress";
     setBtnLoadingContent(
       <>
         <span style={{ marginRight: ".5rem" }}>Loading</span>
@@ -248,8 +252,8 @@ function Galaxy() {
     setTimeout(() => {
       setBtnLoadingContent(null);
       event.target.removeAttribute("disabled");
-      event.target.style.backgroundColor="#009fb7"
-      event.target.style.cursor="auto"
+      event.target.style.backgroundColor = "#009fb7";
+      event.target.style.cursor = "auto";
       navigate("/result");
     }, 2000);
   };
@@ -263,21 +267,32 @@ function Galaxy() {
       <Stack
         justifyContent="center"
         alignItems="center"
-        sx={{ color: "white", minHeight: "100vh" }}
+        sx={{ color: "white", minHeight: "65vh" }}
       >
         {pageLoading ? (
           <Stack direction="row" justifyContent="center" alignItems="center">
             <span className="loading">Loading</span>
-            <DotWave size={50} speed={1} color="white" />
+            <DotWave size={35} speed={1} color="white" />
           </Stack>
         ) : error ? (
           <span className="error">{error}</span>
         ) : (
           <>
             {totalTimeToBeTaken > 0 ? (
-              <div id="time-display-section">
-                <Typography variant="h6">Time it'll take: </Typography>
-                <Typography variant="h5">{`${totalTimeToBeTaken} Hours`}</Typography>
+              <div className="time-display-section">
+                <Typography
+                  variant="subtitle1"
+                  sx={{ fontFamily: '"Comfortaa", sans-serif !important' }}
+                >
+                  Time it'll take:{" "}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: '"Comfortaa", sans-serif !important',
+                    fontWeight: "600 !important",
+                  }}
+                >{`${totalTimeToBeTaken} Hours`}</Typography>
               </div>
             ) : (
               ""
@@ -290,6 +305,8 @@ function Galaxy() {
               handlePlanetClick={handlePlanetClick}
               planetCurrentlySelected={planetCurrentlySelected}
               setPlanetCurrentlySelected={setPlanetCurrentlySelected}
+              toShowPlanets={toShowPlanets}
+              setToShowPlanets={setToShowPlanets}
             />
             {selectedPlanets.length === 4 ? (
               <div className="start-section">
@@ -311,8 +328,10 @@ function Galaxy() {
                 </Button>
               </div>
             ) : (
-              <Typography className="start-section" variant="h6">
-                Select four planets to start the hunt.
+              <Typography className="start-section" variant="subtitle1">
+                <span className="start-section-text">
+                  Select four planets to start the hunt.
+                </span>
               </Typography>
             )}
           </>

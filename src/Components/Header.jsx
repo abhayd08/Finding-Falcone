@@ -1,17 +1,17 @@
 import HelpIcon from "@mui/icons-material/Help";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ component }) => {
   const navigate = useNavigate();
   const handleNavigation = (path) => {
-      navigate(path);
+    navigate(path);
   };
 
   return (
     <div className="header">
-      <a href="/">
+      <a href="https://www.geektrust.com" target="_blank" rel="noreferrer">
         <div
           className={`header-title ${
             component === "Galaxy" ? "header-title-galaxy" : ""
@@ -21,7 +21,7 @@ const Header = ({ component }) => {
         </div>
       </a>
       <div id="nav-menu">
-        {component === "Introduction" ? (
+        {component === "Introduction" || component === "Result" ? (
           <>
             <div
               className={`nav-btn ${
@@ -31,23 +31,19 @@ const Header = ({ component }) => {
                 handleNavigation("/galaxy");
               }}
             >
-              <TravelExploreIcon /> Galaxy
+              <TravelExploreIcon id="galaxy-icon" /> Galaxy
             </div>
-            <a
-              href="https://www.geektrust.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to="/">
               <div
-                className={`nav-btn ${
+                className={`nav-btn home-btn ${
                   component === "Galaxy" ? "nav-btn-galaxy" : ""
                 }`}
               >
                 Home
               </div>
-            </a>
+            </Link>
           </>
-        ) : component === "Galaxy" || component === "Result" ? (
+        ) : component === "Galaxy" ? (
           <>
             <div
               className={`nav-btn ${
@@ -57,21 +53,17 @@ const Header = ({ component }) => {
                 handleNavigation("/");
               }}
             >
-              <HelpIcon /> Introduction
+              <HelpIcon /> Intro
             </div>
-            <a
-              href="https://www.geektrust.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to="/">
               <div
-                className={`nav-btn ${
+                className={`nav-btn home-btn ${
                   component === "Galaxy" ? "nav-btn-galaxy" : ""
                 }`}
               >
                 Home
               </div>
-            </a>
+            </Link>
           </>
         ) : (
           ""

@@ -5,36 +5,36 @@
 }
 
 .loading {
-  font-size: 1.75rem;
+  font-size: 1.18rem;
   opacity: 0.9;
   text-align: center;
-  margin-right: 1.1rem;
+  margin-right: 0.9rem;
+  z-index: 2;
 }
 
 .error {
   max-width: 80%;
+  z-index: 2;
   background: linear-gradient(to right, #161032, black);
   color: #81adff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
   opacity: 0.8;
-  padding: 1.25rem;
+  padding: 1.15rem;
   padding-left: 2rem;
   padding-right: 3rem;
   border-radius: 1.1rem;
 }
 
-#time-display-section {
+.time-display-section {
   position: fixed;
   bottom: 50vh;
   left: 0;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1.25rem;
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
+  padding: 1rem;
+  z-index: 2;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: rgb(2, 116, 97);
-  z-index: 1;
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -42,13 +42,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 1.5rem !important;
-  letter-spacing: 2px !important;
+  padding-bottom: 1rem;
+  font-size: 1.1rem !important;
+  letter-spacing: 1.5px !important;
+  text-align: center;
   width: auto;
   height: 5rem;
+  font-family: "Comfortaa", sans-serif !important;
+  font-weight: 600 !important;
+  z-index: 1;
+}
+
+.start-section-text {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #start-btn-galaxy {
@@ -62,6 +72,7 @@
   padding-left: 1.75rem !important;
   padding-right: 1.75rem !important;
   border-radius: 1.15rem !important;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
   z-index: 1;
   transition: 0.25s ease-in-out;
   animation: fadeIn 1.5s ease-in-out forwards;
@@ -69,17 +80,24 @@
 
 #start-btn-galaxy:hover {
   background-color: #e06d06;
-  transform: scale(1.15);
+  transform: scale(1.06);
 }
 
 #start-btn-galaxy:active {
   transform: translateY(1rem);
 }
 
+@media (max-width: 720px) {
+  .start-section {
+    font-size: 1.04rem !important;
+  }
 
+  .time-display-section * {
+    font-size: 0.9rem !important;
+  }
 
-@media (max-width: 576px) {
-  #start-btn-galaxy {
-    font-size: 1.5rem !important;
+  .time-display-section {
+    font-size: 0.9rem !important;
+    padding: 0.9rem;
   }
 }

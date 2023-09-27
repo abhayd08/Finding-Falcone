@@ -2,89 +2,63 @@ import { Stack, Typography } from "@mui/material";
 import "./VehiclesInfo.css";
 
 function VehiclesInfo() {
+  const vehiclesInfo = [
+    {
+      name: "Space Pod",
+      img: "/assets/Vehicles/Space pod.webp",
+      id: "v1",
+      description:
+        "The Space Pod is a compact and agile vehicle designed for short interstellar journeys. Its small size allows it to navigate through tight spaces and reach distant planets quickly. With a range of 200 MegaMiles, the Space Pod is ideal for missions that require swift travel and precise maneuvering.",
+    },
+    {
+      name: "Space Rocket",
+      img: "/assets/Vehicles/Space rocket.webp",
+      id: "v2",
+      description:
+        "The Space Rocket is a powerful vehicle built for high-speed space travel. Equipped with advanced propulsion systems, it can cover vast distances of up to 300 MegaMiles in a short time. Its strong engines and aerodynamic design make it a preferred choice for missions that demand both speed and endurance.",
+    },
+    {
+      name: "Space Shuttle",
+      img: "/assets/Vehicles/Space shuttle.webp",
+      id: "v3",
+      description:
+        "The Space Shuttle is a versatile spacecraft designed for medium-range journeys across the cosmos. It features a balanced combination of cargo capacity and passenger comfort, making it suitable for various mission profiles. With a range of 400 MegaMiles, the Space Shuttle ensures efficient transportation of both crew and resources.",
+    },
+    {
+      name: "Space Ship",
+      img: "/assets/Vehicles/Space ship.webp",
+      id: "v4",
+      description:
+        "The Space Ship is a large and robust vehicle designed for long-haul interstellar travel. Its spacious interiors and advanced life-support systems make it suitable for extended missions across vast cosmic distances. With a remarkable range of 600 MegaMiles, the Space Ship is a dependable choice for explorations into the furthest reaches of space.",
+    },
+  ];
   return (
     <div id="vehicles-info-container">
       <Typography id="brand-vehiclesinfo" variant="h4">
         Vehicles
       </Typography>
-      <div className="vehicles-info">
-        <Stack className="media-vehiclesinfo">
-          <img
-            src="/assets/Vehicles/Space pod.webp"
-            alt="Space Pod"
-            className="img-vehiclesinfo"
-          />
-          <Typography variant="h6" className="vehicle-name-vehiclesinfo">
-            Space Pod
-          </Typography>
-        </Stack>
-        <Typography className="description-vehiclesinfo" variant="subtitle1">
-          The Space Pod is a compact and agile vehicle designed for short
-          interstellar journeys. Its small size allows it to navigate through
-          tight spaces and reach distant planets quickly. With a range of{" "}
-          <strong>200 MegaMiles</strong>, the Space Pod is ideal for missions
-          that require swift travel and precise maneuvering.
-        </Typography>
-      </div>
-      <div className="vehicles-info">
-        <Stack className="media-vehiclesinfo">
-          <img
-            src="/assets/Vehicles/Space rocket.webp"
-            alt="Space Rocket"
-            className="img-vehiclesinfo"
-          />
-          <Typography variant="h6" className="vehicle-name-vehiclesinfo">
-            Space Rocket
-          </Typography>
-        </Stack>
-        <Typography className="description-vehiclesinfo" variant="subtitle1">
-          The Space Rocket is a powerful vehicle built for high-speed space
-          travel. Equipped with advanced propulsion systems, it can cover vast
-          distances of up to <strong>300 MegaMiles</strong> in a short time. Its
-          strong engines and aerodynamic design make it a preferred choice for
-          missions that demand both speed and endurance.
-        </Typography>
-      </div>
-      <div className="vehicles-info">
-        <Stack className="media-vehiclesinfo">
-          <img
-            src="/assets/Vehicles/Space shuttle.webp"
-            alt="Space Shuttle"
-            className="img-vehiclesinfo"
-          />
-          <Typography variant="h6" className="vehicle-name-vehiclesinfo">
-            Space Shuttle
-          </Typography>
-        </Stack>
-        <Typography className="description-vehiclesinfo" variant="subtitle1">
-          The Space Shuttle is a versatile spacecraft designed for medium-range
-          journeys across the cosmos. It features a balanced combination of
-          cargo capacity and passenger comfort, making it suitable for various
-          mission profiles. With a range of <strong>400 MegaMiles</strong>, the
-          Space Shuttle ensures efficient transportation of both crew and
-          resources.
-        </Typography>
-      </div>
-      <div className="vehicles-info">
-        <Stack className="media-vehiclesinfo">
-          <img
-            src="/assets/Vehicles/Space ship.webp"
-            alt="Space Ship"
-            className="img-vehiclesinfo"
-          />
-          <Typography variant="h6" className="vehicle-name-vehiclesinfo">
-            Space Ship
-          </Typography>
-        </Stack>
-        <Typography className="description-vehiclesinfo" variant="subtitle1">
-          The Space Ship is a large and robust vehicle designed for long-haul
-          interstellar travel. Its spacious interiors and advanced life-support
-          systems make it suitable for extended missions across vast cosmic
-          distances. With a remarkable range of <strong>600 MegaMiles</strong>,
-          the Space Ship is a dependable choice for explorations into the
-          furthest reaches of space.
-        </Typography>
-      </div>
+      {vehiclesInfo.map((vehicleInfo) => {
+        return (
+          <div className="vehicles-info" key={vehicleInfo.id}>
+            <Stack className="media-vehiclesinfo">
+              <img
+                src={vehicleInfo.img}
+                alt={vehicleInfo.name}
+                className="img-vehiclesinfo"
+              />
+              <Typography
+                variant="subtitle1"
+                className="vehicle-name-vehiclesinfo"
+              >
+                Space Pod
+              </Typography>
+            </Stack>
+            <Typography className="description-vehiclesinfo" variant="body1">
+              {vehicleInfo.description}
+            </Typography>
+          </div>
+        );
+      })}
     </div>
   );
 }

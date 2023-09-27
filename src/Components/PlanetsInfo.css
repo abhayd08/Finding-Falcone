@@ -1,22 +1,21 @@
 #planets-info-container {
-  padding: 2rem;
-  margin-top: 7.5rem;
-  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 
 #brand-planetsinfo {
-  margin-bottom: -1.25rem;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
   align-self: center;
-  letter-spacing: 0.35rem;
   color: #2e2c4b;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
+  font-size: 2.15rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  margin-bottom: -2rem;
 }
 
 .planets-info {
@@ -24,14 +23,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
   color: #061826;
 }
 
 .media-planetsinfo {
   justify-content: center;
   align-items: center;
-  flex-basis: 10rem;
+  width: 10rem;
   cursor: none;
   transition: 0.25s ease-in-out;
 }
@@ -42,42 +41,65 @@
 }
 
 .planet-name-planetsinfo {
-  font-family: "Bricolage Grotesque", sans-serif !important ;
-  letter-spacing: 2px !important;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif !important;
+  opacity: 0.85;
+  font-size: 1.15rem !important;
+  letter-spacing: 1px !important;
 }
 
 .description-planetsinfo {
-  flex-basis: 70%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Comfortaa", sans-serif !important;
+  font-size: 1.05rem !important;
+  flex-basis: 65%;
   text-align: justify;
+  opacity: 0.9;
 }
 
 .media-planetsinfo:hover {
+  transform: scale(1.1);
+
   .img-planetsinfo {
-    animation: spin 6s linear infinite;
+    animation: spin 5s linear infinite;
   }
 }
 
-.media-planetsinfo:hover {
-  transform: scale(1.15);
+@media (min-width: 576px) {
+  #planets-info-container {
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
-
-
 
 @media (max-width: 576px) {
   #planets-info-container {
-    margin-top: 9rem;
+    gap: 6rem;
+    padding: 0.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   #brand-planetsinfo {
-    font-size: 2.75rem;
+    padding-left: 1rem;
+    align-self: self-start;
   }
 
-  .img-planetsinfo {
-    width: 6rem !important;
+  .planets-info {
+    flex-direction: column;
+  }
+
+  .media-planetsinfo {
+    width: auto;
   }
 
   .description-planetsinfo {
-    font-size: 1.15rem !important;
+    width: 88%;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .img-planetsinfo {
+    animation: spin 14s linear infinite;
   }
 }

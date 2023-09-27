@@ -3,26 +3,34 @@
 }
 
 #intro-box-2 {
-  background: linear-gradient(to bottom, white, rgb(181, 243, 222));
+  background: linear-gradient(
+    to bottom,
+    white,
+    rgb(181, 243, 222),
+    white,
+    white
+  );
 }
 
 #btn-container-introduction {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3.5rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  margin-bottom: 2.25rem;
+  gap: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 #btn-container-introduction Button {
   position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   font-size: 1rem;
   text-transform: none;
   color: #161032 !important;
   animation: fadeIn 1.5s ease-in-out forwards;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
 }
 
 #btn-container-introduction Button:hover {
@@ -44,11 +52,14 @@
 
 .ready-btn-introduction:last-child {
   background-color: #161032;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
+  font-weight: 800 !important;
+  letter-spacing: 2.5px !important;
 }
 
 .ready-btn-introduction:last-child:hover {
   background-color: #e06d06;
-  transform: scale(1.15);
+  transform: scale(1.06);
 }
 
 .ready-btn-introduction:active {
@@ -65,21 +76,19 @@
   height: 5px;
   background-color: #009fb7;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  border-radius: 0.5rem;
+  transition: opacity 0.25s ease;
 }
 
 #btn-container-introduction Button:last-child:hover::before {
   opacity: 1;
 }
 
-
-
 @media (max-width: 576px) {
-  #btn-container-introduction Button {
-    font-size: 1.05rem;
+  #btn-container-introduction {
+    gap: 1rem;
   }
-
-  .ready-btn-introduction {
-    font-size: 1.55rem !important;
+  #btn-container-introduction Button {
+    font-size: 0.8rem;
   }
 }

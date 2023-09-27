@@ -11,15 +11,10 @@ root.render(
     <Router>
       <SnackbarProvider
         maxSnack={2}
-        autoHideDuration={3000}
+        autoHideDuration={2700}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "center",
-        }}
-        style={{
-          fontSize: "1.085rem",
-          maxWidth: "80%",
-          fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
         }}
       >
         <App />

@@ -1,7 +1,6 @@
 body {
   position: relative;
-  display: flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Comfortaa", sans-serif;
   margin: 0;
 }
 
@@ -57,10 +56,17 @@ a {
   }
 }
 
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
-
-@media (min-width: 576px) {
-  #root {
-    width: 100%;
+@media (max-width: 300px) {
+  body {
+    display: flex;
   }
 }
